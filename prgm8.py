@@ -1,16 +1,10 @@
-import sys
-
-scores = list(map(int, sys.argv[1:]))
+scores = [80, 90, 85, 75, 95]
 
 total = sum(scores)
-average = total / len(scores)
 
-print("Scores:", scores) 
-print("Sum:", total) 
-print("Average:", average)
-
-#--------------------------------------------------
-maximum = max(scores)
-minimum = min(scores)
-
-print
+if len(scores) > 0:
+    average = total / len(scores)
+    print("Total:", total)
+    print("Average:", average)
+else:
+    print("No scores available")
